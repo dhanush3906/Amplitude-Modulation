@@ -78,19 +78,20 @@ Program
 ```
 Am=4.8;
 fm=407;
-Ac=3.4;
+Ac=9.6;
 fc=4070;
-fs=407000;
+fs=40700;
 t=0:1/fs:2/fm;
 m=Am*cos(2*3.14*fm*t);
-
-s=(Ac+m).*cos(2*3.14*fc*t);
 subplot(3,1,1);
 plot(t,m);
+c=Ac*cos(2*3.14*fc*t);
 subplot(3,1,2);
 plot(t,c);
-subplot(3,1,3)
+s=(Ac+m).*cos(2*3.14*fc*t);
+subplot(3,1,3);
 plot(t,s);
+
 ```
 
 
@@ -103,7 +104,8 @@ Output Waveform
 
 
 TABULATION:
-![WhatsApp Image 2025-09-25 at 15 50 40_75d91e55](https://github.com/user-attachments/assets/b5d5268a-ca12-4274-9326-dc38eaaed190)
+![WhatsApp Image 2025-12-03 at 12 09 54_b4509fc9](https://github.com/user-attachments/assets/62360707-0a74-4df7-91d5-36187a083379)
+
 
 
 
